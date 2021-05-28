@@ -26,7 +26,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 
 
-@Listeners(app.Listeners.BaseListener.class)
+//@Listeners(app.Listeners.BaseListener.class)
 public class AppLoginTest extends BaseConfiguration
 {
 	
@@ -76,17 +76,10 @@ public class AppLoginTest extends BaseConfiguration
     	
     
     
-    @AfterMethod
-    public void testfailure(ITestResult result) throws Exception {
-    	
-    	if(result.getStatus()==ITestResult.FAILURE) {
-    		String screenpath = screen.capturescreen(driver, result.getName());
-    		test.log(LogStatus.INFO, test.addScreenCapture(screenpath));
-    		   		
-    	}
+   
     	
     	
-    }
+    
     
     
     

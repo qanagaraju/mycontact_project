@@ -9,7 +9,7 @@ import com.app.Utilities.BaseConfiguration;
 
 
 
-@Listeners(app.Listeners.BaseListener.class)
+//@Listeners(app.Listeners.BaseListener.class)
 public class AppSignUpTestCase extends BaseConfiguration {
 	
 	public AppSignUp signup;
